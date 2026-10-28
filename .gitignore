@@ -1,0 +1,61 @@
+# ==========================================
+# rorraxy Ecosystem - Hacker-Proof .gitignore
+# ==========================================
+
+# 1. Environment & API Keys
+.env*
+*.env
+security-config/.env*
+security-config/config.js
+security-config/cloudflare.js
+security-config/firebase.js
+
+# 2. Authentication, Passkeys & Encryption Keys
+*.pem
+*.key
+*.cert
+private/
+secrets/
+tokens/
+auth-tokens/
+
+# 3. Trade, Checkout, Courier & Payment Gateway Secrets
+trade/checkout.js
+trade/courier.js
+trade/invoice.js
+payment/
+gateway-keys/
+
+# 4. Database, Backup & Storage Dumps
+*.sql
+*.sqlite
+*.sqlite3
+backup/
+backups/
+*.bak
+*.dump
+storage-data/
+
+# 5. Build, Dependencies & Package Manager Files
+node_modules/
+jspm_packages/
+dist/
+build/
+.output/
+
+# 6. Logs, Debug & System Files
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.DS_Store
+Thumbs.db
+
+# 7. IDE & Editor Specific Configs (VS Code, WebStorm)
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
